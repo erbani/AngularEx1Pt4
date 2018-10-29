@@ -1,0 +1,20 @@
+<!-- Exercice 1
+
+Faire une page HTML contenant un bouton + , un bouton - et un paragraphe.
+Au clic sur le bouton + incrémenter le chiffre présent dans le paragraphe de 1.
+Au clic sur le bouton - décrémenter le chiffre de 1. -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+</head>
+<body ng-app>
+  <button ng-click="count = count + 1" ng-init="count=0" type="button" id="plus">+</button>
+  <button ng-click="count = count - 1" ng-init="count=0" type="button" id="moins">-</button>
+  <p>votre scrore est: {{count}}</p>
+  <script src="script.js"></script>
+</body>
+</html>
